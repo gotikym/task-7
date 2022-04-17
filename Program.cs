@@ -9,11 +9,13 @@ internal class Program
         var crystalCost = 150;
         Console.WriteLine($"Вы можете купить кристаллы в нашей лавке всего по {crystalCost} золотых, берите у нас и не проходите мимо, сколько вам нужно?");
         var crystalCount = Convert.ToInt32(Console.ReadLine());
+        
         if ((crystalCost * crystalCount) > gold)
         {
             crystalCount = gold / crystalCost;
             gold = gold % crystalCost;
         }
+        
         gold = gold % (crystalCost * crystalCount);
         Console.WriteLine($"Золото: {gold} Кристаллы: {crystalCount}");
     }
