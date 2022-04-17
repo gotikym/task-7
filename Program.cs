@@ -16,7 +16,7 @@ internal class Program
             gold = gold % crystalCost;
         }
         
-        gold = gold % (crystalCost * crystalCount);
+        gold = gold - (crystalCost * crystalCount);
         Console.WriteLine($"Золото: {gold} Кристаллы: {crystalCount}");
     }
 }
