@@ -18,7 +18,7 @@ internal class Program
 
         else
         {
-            gold = gold - (crystalCost * crystalsCount);
+            gold -= (crystalCost * crystalsCount);
         }
 
         Console.WriteLine($"Золото: {gold} Кристаллы: {crystalsCount}");
